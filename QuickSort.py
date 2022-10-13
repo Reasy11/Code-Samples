@@ -25,7 +25,7 @@ def Partition(array, low, high):
 #Define QuickSort
 def QuickSort(array, low, high):
     if low < high:
-        pivot = Partition(array, low, high)                               #Create a random pivot within the array
+        pivot = Partition(array, low, high)                               #Create a pivot within the array
         QuickSort(array, low, pivot-1)                                    #Sort the left half of the array
         QuickSort(array, pivot+1, high)                                   #Sort the right half of the array
 
